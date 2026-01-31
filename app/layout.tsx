@@ -1,6 +1,6 @@
 // Global Wrapper (navbar/footer live here) 
 import type { Metadata } from "next";
-import { Diplomata_SC, Spectral_SC, Source_Serif_4, Oswald } from 'next/font/google';
+import { Diplomata_SC, Spectral_SC, Source_Serif_4, Oswald, Allura } from 'next/font/google';
 import "./globals.css";
 
 const diplomata = Diplomata_SC({
@@ -17,7 +17,7 @@ const spectral = Spectral_SC({
 
 const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
-  weight: '300',
+  weight: '400',
   display: 'swap',
 });
 
@@ -26,6 +26,13 @@ const oswald = Oswald({
   weight: '600',
   display: 'swap',
 });
+
+const allura = Allura({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+});
+
 
 export const metadata: Metadata = {
   title: "Coffee Menu",

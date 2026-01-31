@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
-import Hero from "./components/Hero";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { navBarContent } from "./content";
 import NavButton from "./components/NavButton";
+import Image from "next/image";
 
 export default function Home() {
   type NavKey = "nav1" | "nav2" | "nav3" | "nav4";
@@ -12,21 +13,45 @@ export default function Home() {
 
   return (
     <div>
-      <Hero />
+      <Header />
 
       {/* Responsive 3-column layout: stack on small, 2 columns on md, 3 columns on lg+ */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {/* Nav Column */}
         <aside className="col-span-1 p-2 font-oswald">
           <div className="text-large md:text-xl lg:text-2xl px-2 flex flex-col">
-            <NavButton className="bubbly-button relative inline-block rounded border-4 border-[#d52139] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] mt-2 bg-[#0F0B08] hover:bg-[#F6F5F3] text-[#F6F5F3] hover:text-[#0F0B08] uppercase" 
-              onClick={() => setSelected("nav1")}>{navBarContent.descriptions.nav1.heading}</NavButton>
-            <NavButton className="bubbly-button relative inline-block rounded border-4 border-[#d52139] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] mt-2 bg-[#0F0B08] hover:bg-[#F6F5F3] text-[#F6F5F3] hover:text-[#0F0B08] uppercase" 
-              onClick={() => setSelected("nav2")}>{navBarContent.descriptions.nav2.heading}</NavButton>
-            <NavButton className="bubbly-button relative inline-block rounded border-4 border-[#d52139] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] mt-2 bg-[#0F0B08] hover:bg-[#F6F5F3] text-[#F6F5F3] hover:text-[#0F0B08] uppercase" 
-              onClick={() => setSelected("nav3")}>{navBarContent.descriptions.nav3.heading}</NavButton>
-            <NavButton className="bubbly-button relative inline-block rounded border-4 border-[#d52139] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] my-2 bg-[#0F0B08] hover:bg-[#F6F5F3] text-[#F6F5F3] hover:text-[#0F0B08] uppercase" 
-              onClick={() => setSelected("nav4")}>{navBarContent.descriptions.nav4.heading}</NavButton>
+            <NavButton
+              id="nav1"
+              selected={selected}
+              onClick={() => setSelected("nav1")}
+              className="bubbly-button relative inline-block rounded border-4 border-[var(--accent-terra)] hover:border-[var(--accent-mocha)] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] mt-2 bg-[var(--coffee-medium)] hover:bg-[var(--coffee-dark)] text-[var(--coffee-light)] hover:text-[var(--accent-green)] uppercase"
+            >
+              {navBarContent.descriptions.nav1.heading}
+            </NavButton>
+            <NavButton
+              id="nav2"
+              selected={selected}
+              onClick={() => setSelected("nav2")}
+              className="bubbly-button relative inline-block rounded border-4 border-[var(--accent-terra)] hover:border-[var(--accent-mocha)] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] mt-2 bg-[var(--coffee-medium)] hover:bg-[var(--coffee-dark)] text-[var(--coffee-light)] hover:text-[var(--accent-green)] uppercase"
+            >
+              {navBarContent.descriptions.nav2.heading}
+            </NavButton>
+            <NavButton
+              id="nav3"
+              selected={selected}
+              onClick={() => setSelected("nav3")}
+              className="bubbly-button relative inline-block rounded border-4 border-[var(--accent-terra)] hover:border-[var(--accent-mocha)] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] mt-2 bg-[var(--coffee-medium)] hover:bg-[var(--coffee-dark)] text-[var(--coffee-light)] hover:text-[var(--accent-green)] uppercase"
+            >
+              {navBarContent.descriptions.nav3.heading}
+            </NavButton>
+            <NavButton
+              id="nav4"
+              selected={selected}
+              onClick={() => setSelected("nav4")}
+              className="bubbly-button relative inline-block rounded border-4 border-[var(--accent-terra)] hover:border-[var(--accent-mocha)] cursor-pointer transition active:scale-90 w-full h-[5vh] md:h-[6vh] lg:h-[7vh] my-2 bg-[var(--coffee-medium)] hover:bg-[var(--coffee-dark)] text-[var(--coffee-light)] hover:text-[var(--accent-green)] uppercase"
+            >
+              {navBarContent.descriptions.nav4.heading}
+            </NavButton>
           </div>
         </aside>
 
@@ -44,12 +69,24 @@ export default function Home() {
         </main>
 
         {/* Feature */}
-        <div className="col-span-1 md:col-span-2 lg:col-span-1 flex flex-row lg:flex-col items-center justify-center p-2 gap-2 bg-[#3F2713] rounded m-4 min-h-[40vh] lg:min-h-[60vh]">
-          <div className="flex-1 w-1/2 lg:w-full h-full bg-gray-100 border border-gray-300 flex items-center justify-center">
-            <span className="text-gray-500">Image 1</span>
+        <div className="col-span-1 md:col-span-2 lg:col-span-1 flex flex-row lg:flex-col items-center justify-center p-2 gap-2 bg-[var(--coffee-darker)] rounded m-4 min-h-[40vh] lg:min-h-[60vh]">
+          <div className="flex-1 w-1/2 lg:w-full h-full flex items-center justify-center">
+            <Image
+              src = "/images/lattes.jpg" 
+              alt="Coffee 1"
+              width={400}           // adjust width
+              height={300}          // adjust height
+              className="object-cover w-full h-full rounded"
+            />
           </div>
-          <div className="flex-1 w-1/2 lg:w-full h-full bg-gray-100 border border-gray-300 flex items-center justify-center">
-            <span className="text-gray-500">Image 2</span>
+          <div className="flex-1 w-1/2 lg:w-full h-full flex items-center justify-center">
+            <Image
+              src = "/images/espresso.jpg" 
+              alt="Coffee 2"
+              width={400}           // adjust width
+              height={300}          // adjust height
+              className="object-cover w-full h-full rounded"
+            />
           </div>
         </div>
       </div>

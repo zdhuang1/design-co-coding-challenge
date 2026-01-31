@@ -2,6 +2,10 @@ export const heroContent = {
   title: "Coffee Menu",
 };
 
+export const footerContent = {
+  quote: "Know your coffee"
+}
+
 export const navBarContent = {
   descriptions: {
     nav1: { heading: "Espresso", body: [
