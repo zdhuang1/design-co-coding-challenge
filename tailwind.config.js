@@ -2,8 +2,8 @@
 
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}", // scans all JS/TS/JSX/TSX files in app/
-  ],
+    "./app/**/*.{ts,tsx}",        // App Router pages
+    "./components/**/*.{ts,tsx}"  ],
   theme: {
     screens: {
       xs: '480px',

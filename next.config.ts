@@ -1,9 +1,10 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // tells Next.js to export a static site
+  output: "export",
   basePath: "/design-co-coding-challenge",
-  assetPrefix: "./",
+  assetPrefix: "./",   // MUST be relative for GH Pages
 };
 
 export default nextConfig;
