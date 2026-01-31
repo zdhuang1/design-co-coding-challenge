@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/design-club-coding-challenge//_next/:path+",
-        "destination": "/design-club-coding-challenge/_next/:path+"
+        "source": "/design-co-coding-challenge//_next/:path+",
+        "destination": "/design-co-coding-challenge/_next/:path+"
       }
     ],
     "fallback": []

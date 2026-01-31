@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
-2:I[39756,["/design-club-coding-challenge/_next/static/chunks/ff1a16fafef87110.js","/design-club-coding-challenge/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-3:I[37457,["/design-club-coding-challenge/_next/static/chunks/ff1a16fafef87110.js","/design-club-coding-challenge/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-0:{"buildId":"5Imw33sVPQ610lO7d4x3k","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+2:I[39756,["/design-co-coding-challenge/_next/static/chunks/ff1a16fafef87110.js","/design-co-coding-challenge/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+3:I[37457,["/design-co-coding-challenge/_next/static/chunks/ff1a16fafef87110.js","/design-co-coding-challenge/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+0:{"buildId":"Uq2eLTvYk3AmMhzMMst1W","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
