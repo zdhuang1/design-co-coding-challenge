@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { navBarContent } from "./content";
 import NavButton from "./components/NavButton";
-import Image from "next/image";
 
 export default function Home() {
   type NavKey = "nav1" | "nav2" | "nav3" | "nav4";
@@ -71,7 +70,7 @@ export default function Home() {
         {/* Feature */}
         <div className="col-span-1 md:col-span-2 lg:col-span-1 flex flex-row lg:flex-col items-center justify-center p-2 gap-2 bg-[var(--coffee-darker)] rounded m-4 min-h-[40vh] lg:min-h-[60vh]">
           <div className="flex-1 w-1/2 lg:w-full h-full flex items-center justify-center">
-            <Image
+            <img
               src = "/images/lattes.jpg" 
               alt="Coffee 1"
               width={400}           // adjust width
@@ -80,7 +79,7 @@ export default function Home() {
             />
           </div>
           <div className="flex-1 w-1/2 lg:w-full h-full flex items-center justify-center">
-            <Image
+            <img
               src = "/images/espresso.jpg" 
               alt="Coffee 2"
               width={400}           // adjust width
