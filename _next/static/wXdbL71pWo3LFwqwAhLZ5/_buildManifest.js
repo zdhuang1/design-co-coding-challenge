@@ -3,7 +3,7 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/design-co-coding-challenge//_next/:path+",
+        "source": "/.//_next/:path+",
         "destination": "/design-co-coding-challenge/_next/:path+"
       }
     ],

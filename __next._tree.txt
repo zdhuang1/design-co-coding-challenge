@@ -1,7 +1,7 @@
-:HL["/design-co-coding-challenge/_next/static/chunks/e20160deeeec0997.css","style"]
-:HL["/design-co-coding-challenge/_next/static/media/09fd331868a74310-s.p.e287d451.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/design-co-coding-challenge/_next/static/media/4c903e044296e924-s.p.b7215fed.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/design-co-coding-challenge/_next/static/media/69eeeba135b38302-s.p.d44366cb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/design-co-coding-challenge/_next/static/media/8f398aa5004dc30f-s.p.7f5f62a4.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/design-co-coding-challenge/_next/static/media/b2062878eea3d713-s.p.6cb832bb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"buildId":"9aYCnrauiyfCsFpHiI9uy","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["./_next/static/chunks/e20160deeeec0997.css","style"]
+:HL["./_next/static/media/09fd331868a74310-s.p.e287d451.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["./_next/static/media/4c903e044296e924-s.p.b7215fed.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["./_next/static/media/69eeeba135b38302-s.p.d44366cb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["./_next/static/media/8f398aa5004dc30f-s.p.7f5f62a4.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["./_next/static/media/b2062878eea3d713-s.p.6cb832bb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"buildId":"wXdbL71pWo3LFwqwAhLZ5","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
